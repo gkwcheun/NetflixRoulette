@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav Bar Testing Nav Bar Snapshot 1`] = `
+<div
+  className="nav-bar-container"
+>
+  <nav
+    className="nav-bar"
+  >
+    <a
+      className="nav-link selected-nav"
+      href="/search"
+      name="all"
+      onClick={[Function]}
+    >
+      ALL
+    </a>
+    <a
+      className="nav-link null"
+      href="/search?genre=documentary"
+      name="documentary"
+      onClick={[Function]}
+    >
+      DOCUMENTARY
+    </a>
+    <a
+      className="nav-link null"
+      href="/search?genre=comedy"
+      name="comedy"
+      onClick={[Function]}
+    >
+      COMEDY
+    </a>
+    <a
+      className="nav-link null"
+      href="/search?genre=horror"
+      name="horror"
+      onClick={[Function]}
+    >
+      HORROR
+    </a>
+    <a
+      className="nav-link null"
+      href="/search?genre=crime"
+      name="crime"
+      onClick={[Function]}
+    >
+      CRIME
+    </a>
+  </nav>
+  <div
+    className="sort-nav"
+  >
+    <div
+      className="dropdown"
+    >
+      <button
+        aria-expanded={false}
+        className="sortby-toggle dropdown-toggle btn btn-dark"
+        data-testid="dropdown-toggle"
+        disabled={false}
+        id="dropdown-button-dark-example2"
+        onClick={[Function]}
+        type="button"
+      >
+        <span
+          className="sort-by-label"
+        >
+          SORT BY
+        </span>
+        RELEASE DATE
+      </button>
+    </div>
+  </div>
+</div>
+`;

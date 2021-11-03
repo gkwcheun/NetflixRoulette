@@ -1,0 +1,160 @@
+.modal-content {
+  border: 0;
+}
+.add-movie-modal {
+  background: #232323;
+  border-color: #232323;
+}
+
+.modal-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 49px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.888889px;
+  text-transform: uppercase;
+
+  color: #f65261;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.add-movie-form-input {
+  background: rgba(50, 50, 50, 0.948044);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.overview-input {
+  height: 200px;
+}
+
+.col-1 {
+  width: 60%;
+}
+
+.add-movie-form-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1.5px solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.reset-btn {
+  background-color: #232323;
+  color: #f65261;
+  border-color: #f65261;
+}
+
+.submit-btn {
+  background-color: #f65261;
+  border-color: #232323;
+}
+
+#dropdown-button-dark-example1 {
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+.dropdown-toggle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /* line-height: 24px; */
+
+  color: #ffffff;
+}
+/* .dropdown-toggle::after {
+  margin-right: auto;
+  margin-left: 70%;
+  color: #f65261;
+} */
+
+#dropdown-button-dark-example1::after {
+  margin-right: auto;
+  margin-left: 70%;
+  color: #f65261;
+}
+
+.form-checkbox {
+  padding-left: 2em;
+}
+
+.form-check-input:checked {
+  background-color: #e64c5a;
+  border-color: #232323;
+}
+
+.modal-body-container {
+  padding: 1em;
+  background-color: #232323;
+}
+
+.reset-btn:hover {
+  background: #f65261;
+  border-color: #f65261;
+  font-weight: bold;
+}
+
+.reset-btn:focus {
+  background: #f65261;
+  border-color: #f65261;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #f65261;
+  border-color: #f65261;
+  font-weight: bold;
+}
+
+.submit-btn:focus {
+  background: #f65261;
+  border-color: #f65261;
+  box-shadow: none;
+  font-weight: bold;
+}

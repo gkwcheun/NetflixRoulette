@@ -1,0 +1,6 @@
+export const SHOW_INFO = "SHOW_INFO";
+export const HIDE_INFO = "HIDE_INFO";
+export const POPULATE_INFO = "POPULATE_INFO";
+export const GET_MOVIE_SUCCESS = "GET_MOVIE_SUCCESS";
+export const GET_MOVIE_FAILURE = "GET_MOVIE_FAILURE";
+export const GET_MOVIE_REQUEST = "GET_MOVIE_REQUEST";

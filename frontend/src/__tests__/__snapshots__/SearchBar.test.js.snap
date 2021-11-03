@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search Bar Testing component renders with given state from redux store 1`] = `
+<div
+  className="search-container"
+>
+  <h1
+    className="find-movie-header"
+  >
+    FIND YOUR MOVIE
+  </h1>
+  <div>
+    <input
+      className="search-input"
+      onChange={[Function]}
+      placeholder="   What do you want to watch?"
+      type="text"
+      value=""
+    />
+    <button
+      className="search-btn"
+      data-testid="movie-search-btn"
+      name="search-button"
+      onClick={[Function]}
+    >
+      Search
+    </button>
+  </div>
+</div>
+`;

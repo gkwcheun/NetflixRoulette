@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.App {
+  position: relative;
+  background: #232323;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 20%;
+  padding-bottom: 5em;
+}
+
+.header-banner {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0%;
+  right: 0%;
+  left: 0%;
+  bottom: 0%;
+  background: url("./images/netflixUI.png");
+  mix-blend-mode: normal;
+  opacity: 0.3;
+  filter: blur(8.15485px);
+}
+
+.top-nav-bar {
+  display: flex;
+  margin-top: 2em;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 2em;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f65261;
+}
+
+.add-movie-btn {
+  margin-right: 2em;
+  background: rgba(96, 96, 96, 0.8);
+  border-radius: 4px;
+  color: #f65261;
+  padding: 10px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #f65261;
+}
+
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  /* margin-right: 40%; */
+  font-family: Montserrat;
+}
+
+.find-movie-header {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 49px;
+  /* identical to box height */
+  align-self: left;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.search-input {
+  width: 713px;
+  height: 57px;
+  left: 178px;
+  top: 242px;
+  background: rgba(50, 50, 50, 0.8);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  border-radius: 4px;
+  color: #ffffff;
+  padding-left: 1em;
+}
+
+.search-btn {
+  background: #f65261;
+  border-radius: 4px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 57px;
+  margin-left: 10px;
+  width: 100px;
+  color: #ffffff;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0%;
+  width: 100%;
+  height: 5%;
+  text-align: center;
+  background: #424242;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 75px;
+  color: #f65261;
+}
+
+.nav-bar-container {
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.nav-bar {
+  display: flex;
+  width: 50%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  justify-content: space-evenly;
+}
+
+.selected-nav {
+  font-weight: bold;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #f65261;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: left;
+}
+
+.sort-by-label {
+  margin-right: 20px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.888889px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.movie-count {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 25px;
+  margin-left: 14%;
+  align-self: left;
+  text-align: left;
+  color: #ffffff;
+}
+
+.movie-list-container {
+  display: grid;
+  width: 100%;
+  height: 75%;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 0 5%;
+  grid-template-columns: repeat(3, 323.41px);
+}
+
+.movie-image {
+  height: 70%;
+  width: 100%;
+}
+
+.movie-card-container {
+  position: relative;
+  height: 100%;
+  width: 300px;
+  font-family: Montserrat;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.edit-delete-btn {
+  position: absolute;
+  right: 5%;
+  top: 10px;
+  width: 36px;
+  height: 36px;
+  background: #2a202d;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.196596);
+  color: white;
+  border-radius: 50px;
+}
+
+.movie-title-year {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-year {
+  padding: 3px;
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.movie-genres {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.error-boundary {
+  /* padding-top: 150px; */
+  width: 100%;
+  height: 100vh;
+
+  font-style: normal;
+  font-weight: 1500;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sortby-toggle > button::after {
+  margin-right: auto;
+  margin-left: 10%;
+  color: #f65261;
+}
+
+#dropdown-button-dark-example2::after {
+  margin-right: auto;
+  margin-left: 5%;
+  color: #f65261;
+}
+
+.error {
+  color: red;
+}
+
+.not-found {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 40%;
+}
+
+/* movie info css */
+
+.movie-info-container {
+  font-family: Montserrat;
+  color: #ffffff;
+  padding: 1em;
+}
+.netflix-roulette {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f65261;
+}
+.return-search {
+  text-align: right;
+  background: #232323;
+  background: #232323;
+  border: 0;
+}
+.return-search-icon {
+  color: #f65261;
+}
+
+.movie-poster {
+  width: 323.41px;
+  height: 486px;
+}
+
+.rating {
+  font-size: 20px;
+  padding: 15px;
+  border: 1px solid #ffffff;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.movie-info-title {
+  font-size: 40px;
+}
+
+.movie-info-genre {
+  font-size: 14px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.movie-info-year-length {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+  color: #f65261;
+}
+
+.movie-info-length {
+  margin-left: 3em;
+}
+
+.movie-info-description {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: #ffffff;
+
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+
+.movie-info-link {
+  text-decoration: none;
+}
+
+/* movie info css */
+
+/* delete modal css */
+
+.modal-content {
+  border: 0;
+}
+.delete-modal {
+  background-color: #232323;
+  border-color: #232323;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  color: #ffffff;
+}
+.delete-modal-title {
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 49px;
+  /* identical to box height */
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+.delete-msg {
+  font-size: 15px;
+  line-height: 24px;
+  padding-left: 20px;
+}
+
+.body-container {
+  padding: 0.5em;
+  background-color: #232323;
+}
+
+.confirm-btn {
+  background: #f65261;
+  border-color: #f65261;
+}
+
+.confirm-btn:hover {
+  background: #f65261;
+  border-color: #f65261;
+  font-weight: bold;
+}
+
+.confirm-btn:focus {
+  background: #f65261;
+  border-color: #f65261;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+/* delete modal css */
+
+/* edit delete modal css */
+
+.edit-delete-container > * {
+  padding: 0;
+  margin: 0;
+}
+
+.edit-delete-container {
+  position: absolute;
+  width: 190px;
+  height: 111px;
+  right: 5%;
+  top: 10px;
+  background: #2a202d;
+}
+
+.edit-delete-close-btn {
+  position: absolute;
+  right: 1%;
+  top: 1%;
+  width: 25px;
+  height: 25px;
+}
+
+.edit-delete-options {
+  position: absolute;
+  height: 43px;
+  width: 190px;
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+
+.edit-delete-options:hover {
+  background-color: #f65261;
+}
+
+.edit {
+  top: 25px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.delete {
+  top: 65px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+/* edit delete modal css */
+
+/* Movie details form css */
+
+.modal-content {
+  border: 0;
+}
+.add-movie-modal {
+  background: #232323;
+  border-color: #232323;
+}
+
+.modal-title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 49px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form-label {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  letter-spacing: 0.888889px;
+  text-transform: uppercase;
+
+  color: #f65261;
+
+  mix-blend-mode: normal;
+  opacity: 0.8;
+}
+
+::placeholder {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.3;
+}
+
+.add-movie-form-input {
+  background: rgba(50, 50, 50, 0.948044);
+  mix-blend-mode: normal;
+  opacity: 0.8;
+  border-radius: 4px;
+  border: none;
+  color: #ffffff;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.overview-input {
+  height: 200px;
+}
+
+.col-1 {
+  width: 60%;
+}
+
+.add-movie-form-btn {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  border: 1.5px solid;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.reset-btn {
+  background-color: #232323;
+  color: #f65261;
+  border-color: #f65261;
+}
+
+.submit-btn {
+  background-color: #f65261;
+  border-color: #232323;
+}
+
+#dropdown-button-dark-example1 {
+  width: 100%;
+  text-align: left;
+}
+
+.dropdown-menu {
+  width: 100%;
+}
+.dropdown-toggle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  /* line-height: 24px; */
+
+  color: #ffffff;
+}
+
+#dropdown-button-dark-example1::after {
+  margin-right: auto;
+  margin-left: 70%;
+  color: #f65261;
+}
+
+.form-checkbox {
+  padding-left: 2em;
+}
+
+.form-check-input:checked {
+  background-color: #e64c5a;
+  border-color: #232323;
+}
+
+.modal-body-container {
+  padding: 1em;
+  background-color: #232323;
+}
+
+.reset-btn:hover {
+  background: #f65261;
+  border-color: #f65261;
+  font-weight: bold;
+}
+
+.reset-btn:focus {
+  background: #f65261;
+  border-color: #f65261;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: #f65261;
+  border-color: #f65261;
+  font-weight: bold;
+}
+
+.submit-btn:focus {
+  background: #f65261;
+  border-color: #f65261;
+  box-shadow: none;
+  font-weight: bold;
+}
+/* Movie details form css */

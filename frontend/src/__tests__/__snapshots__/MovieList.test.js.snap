@@ -1,0 +1,243 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MovieList Testing MovieList Snapshot 1`] = `
+Array [
+  <p
+    className="movie-count"
+  >
+    6 Movies Found
+  </p>,
+  <div
+    className="movie-list-container"
+  >
+    <div
+      className="movie-card-container"
+      data-testid={337167}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=337167"
+        onClick={[Function]}
+      >
+        <img
+          alt="Fifty Shades Freed"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/3kcEGnYBHDeqmdYf8ZRbKdfmlUy.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Fifty Shades Freed
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2018
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Drama, Romance
+      </p>
+    </div>
+    <div
+      className="movie-card-container"
+      data-testid={269149}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=269149"
+        onClick={[Function]}
+      >
+        <img
+          alt="Zootopia"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/sM33SANp9z6rXW8Itn7NnG1GOEs.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Zootopia
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2016
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Animation, Adventure, Family, Comedy
+      </p>
+    </div>
+    <div
+      className="movie-card-container"
+      data-testid={181808}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=181808"
+        onClick={[Function]}
+      >
+        <img
+          alt="Star Wars: The Last Jedi"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/kOVEVeg59E0wsnXmF9nrh6OmWII.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Star Wars: The Last Jedi
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2017
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Fantasy, Adventure, Science Fiction
+      </p>
+    </div>
+    <div
+      className="movie-card-container"
+      data-testid={284054}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=284054"
+        onClick={[Function]}
+      >
+        <img
+          alt="Black Panther"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Black Panther
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2018
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Action, Adventure, Fantasy, Science Fiction
+      </p>
+    </div>
+    <div
+      className="movie-card-container"
+      data-testid={354912}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=354912"
+        onClick={[Function]}
+      >
+        <img
+          alt="Coco"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/eKi8dIrr8voobbaGzDpe8w0PVbC.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Coco
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2017
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Adventure, Comedy, Family, Animation
+      </p>
+    </div>
+    <div
+      className="movie-card-container"
+      data-testid={333339}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+    >
+      <a
+        className="movie-info-link"
+        href="/search/movie=333339"
+        onClick={[Function]}
+      >
+        <img
+          alt="Ready Player One"
+          className="movie-image"
+          onError={[Function]}
+          src="https://image.tmdb.org/t/p/w500/pU1ULUq8D3iRxl1fdX2lZIzdHuI.jpg"
+        />
+      </a>
+      <div
+        className="movie-title-year"
+      >
+        <p
+          className="movie-text movie-title"
+        >
+          Ready Player One
+        </p>
+        <p
+          className="movie-text movie-year"
+        >
+          2018
+        </p>
+      </div>
+      <p
+        className="movie-text movie-genres"
+      >
+        Adventure, Science Fiction, Action
+      </p>
+    </div>
+  </div>,
+]
+`;
