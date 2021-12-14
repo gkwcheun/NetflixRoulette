@@ -169,6 +169,10 @@
   text-align: left;
 }
 
+.dropdown-link {
+  font-size: 0.75rem;
+}
+
 .sort-by-label {
   margin-right: 20px;
   font-style: normal;
@@ -273,7 +277,7 @@
 
 #dropdown-button-dark-example2::after {
   margin-right: auto;
-  margin-left: 5%;
+  /* margin-left: 5%; */
   color: #f65261;
 }
 
@@ -573,6 +577,7 @@ input::-webkit-inner-spin-button {
 
 .dropdown-menu {
   width: 100%;
+  /* text-align: center; */
 }
 .dropdown-toggle {
   font-family: Montserrat;

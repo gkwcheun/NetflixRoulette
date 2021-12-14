@@ -49,8 +49,6 @@ function NavBar(props) {
   };
 
   useEffect(() => {
-    // there are genres that aren't in the figma UI, so not on the list of genres
-    // how to incorporate or just only append whatever genres in UI to obj?
     const searchGenre = query.get("genre") && query.get("genre").toLowerCase();
     let dropDown = "RELEASE DATE";
     const sortBy = query.get("sortBy") && query.get("sortBy").toLowerCase();
@@ -152,10 +150,10 @@ function NavBar(props) {
               <span className="sort-by-label">SORT BY</span>
               {dropDownText}
             </Dropdown.Toggle>
-            <Dropdown.Menu variant="dark">
+            <Dropdown.Menu variant="dark" className="dropdown-menu">
               <Dropdown.Item onClick={onDropDownChange}>
                 <Link
-                  className="nav-link"
+                  className="dropdown-link nav-link"
                   to="/search?sortBy=release_date&sortOrder=asc"
                   name="release_date-asc"
                 >
@@ -164,7 +162,7 @@ function NavBar(props) {
               </Dropdown.Item>
               <Dropdown.Item onClick={onDropDownChange}>
                 <Link
-                  className="nav-link"
+                  className="dropdown-link nav-link"
                   to="/search?sortBy=release_date&sortOrder=desc"
                   name="release_date-desc"
                 >
@@ -176,7 +174,7 @@ function NavBar(props) {
                 name="vote_average-desc"
               >
                 <Link
-                  className="nav-link"
+                  className="dropdown-link nav-link"
                   to="/search?sortBy=vote_average&sortOrder=desc"
                   name="vote_average-desc"
                 >
@@ -184,7 +182,11 @@ function NavBar(props) {
                 </Link>
               </Dropdown.Item>
               <Dropdown.Item onClick={onDropDownChange}>
-                <Link className="nav-link" to="/search" name="clear">
+                <Link
+                  className="dropdown-link nav-link"
+                  to="/search"
+                  name="clear"
+                >
                   Clear Sort
                 </Link>
               </Dropdown.Item>
