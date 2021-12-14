@@ -18,11 +18,7 @@ Runs the backend on http://localhost:4000
 
 ## Frontend Scripts
 
-Please make sure the backend is running before starting the frontend
-
-### `npm run ssr`
-
-starts the front end in server side rendering mode on http://localhost:8080
+Please make sure the backend is running before starting the frontend. This app was developed to be server side rendered, to do so you must use webpack to bundle both the server rendering script as well as the react client code. Please execute the following npm commands in the same order to get the front end up and running.
 
 ### `npm run webpack:client`
 
@@ -31,3 +27,7 @@ used webpack to bundle the client for ssr
 ### `npm run webpack:server`
 
 used webpack to bundle the server for ssr
+
+### `npm run ssr`
+
+starts the front end in server side rendering mode on http://localhost:8080
